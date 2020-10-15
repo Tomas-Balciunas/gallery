@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+@mixin images {
+    width: 25em;
+    filter: blur(2px) grayscale(100%);
+    margin: 1em;
+    border-radius: 0.7em;
+    transition: 0.5s;
+
+    &:hover {
+        filter: grayscale(0%);
+        cursor: pointer;
+        border: 5px ridge rgb(103, 202, 141);
+        transform: rotate(360deg);
+    }
+}
+ 
+@mixin center {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+
+}
+
+$fancyfont: 'Chilanka', cursive;
+$space: 2em;
+$width: 80%;
+$bgcolor: #af7571;
+$gray: gray;
+$cherry: rgb(80, 0, 0);
+
+html {
+    background-color: $gray;
+}
+
+h1 {
+    color: $cherry;
+    margin-top: $space;
+    font-family: $fancyfont;
+}
+
+.container {
+    @include center;
+    width: $width;
+    background-color: $bgcolor;
+    padding: 1em;
+    border: 10px groove rgb(50, 52, 73);
+    border-radius: 0.7em;
+    margin: auto;
+}
+
+h1 {
+    @include center;
+    margin-bottom: $space;
+}
+
+.container {
+    img {
+        @include images;
+        @include center;
+    }
+}
+
+.image1 {
+    position: relative;
+}
+
+.image1 {
+    .hovertext {
+        position: absolute;
+        width: 25%;
+        top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        visibility: hidden;
+        opacity: 0;
+        text-align: center;
+        background-color: #80ddaf8c;
+        border-radius: 0.7em;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+    }
+}
+
+.image1:hover {
+    .hovertext {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+}

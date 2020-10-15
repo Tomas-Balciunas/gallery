@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+html {
+  background-color: gray;
+}
+
+h1 {
+  color: #500000;
+  margin-top: 2em;
+  font-family: "Chilanka", cursive;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  width: 80%;
+  background-color: #af7571;
+  padding: 1em;
+  border: 10px groove #323449;
+  border-radius: 0.7em;
+  margin: auto;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  margin-bottom: 2em;
+}
+
+.container img {
+  width: 25em;
+  -webkit-filter: blur(2px) grayscale(100%);
+          filter: blur(2px) grayscale(100%);
+  margin: 1em;
+  border-radius: 0.7em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.container img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  cursor: pointer;
+  border: 5px ridge #67ca8d;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.image1 {
+  position: relative;
+}
+
+.image1 .hovertext {
+  position: absolute;
+  width: 25%;
+  top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 1.5em;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  background-color: #80ddaf8c;
+  border-radius: 0.7em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.image1:hover .hovertext {
+  visibility: visible;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
